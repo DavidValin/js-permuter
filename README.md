@@ -2,6 +2,8 @@
 
 It generates all possible combinations receiving a set of possible attributes and values choosing one value per attribute at the time.
 
+[![Build Status](https://travis-ci.org/DavidValin/js-permuter.svg?branch=master)](https://travis-ci.org/DavidValin/js-permuter)
+
 #### Example input:
 
 ```javascript
