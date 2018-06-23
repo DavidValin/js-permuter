@@ -1,0 +1,55 @@
+{
+  "name": "js-permuter",
+  "version": "1.0.0",
+  "description": "Generates all possible combinations for a set of possible attributes and values",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "yarn jest --coverage --collectCoverageFrom src/*.ts",
+    "document": "yarn typedoc --out doc src/index.ts",
+    "release": "yarn test && yarn tsc --p tsconfig.json && yarn document && mv doc dist && mv coverage dist"
+  },
+  "keywords": [
+    "permuter",
+    "combination",
+    "combinations",
+    "generate",
+    "combinations",
+    "permutations",
+    "parameter",
+    "permutations"
+  ],
+  "author": "David Valin <hola@davidvalin.com>",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "devDependencies": {
+    "@types/jest": "^23.1.1",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*.+(ts)"
+    ]
+  }
+}
